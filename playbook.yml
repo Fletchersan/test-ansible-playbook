@@ -1,0 +1,7 @@
+---
+- name: Ping all hosts in inventory
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Reachability check (Ansible ping module)
+      ansible.builtin.ping:
